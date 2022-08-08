@@ -1,0 +1,122 @@
+#about{
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.about__imgbox{
+    width: 50%;
+    background: linear-gradient(var(--color-primary),transparent);
+    border-radius: 30rem 20rem 5rem 0;
+    float: left;
+}
+
+.about__img:hover{
+    transform: rotate(3deg);
+    position: relative;
+    transition: 400ms;
+}
+
+.meabout{
+    padding-top: 2rem;
+    border-radius: 32rem 10rem 5rem 5rem;
+}
+
+.about__text{
+    text-align: justify;
+    margin: 2rem 2rem;
+}
+
+.about__btn{
+    position: relative;
+    right: 34.5%;
+}
+
+small{
+    font-size: 0.6rem;
+    padding-top: 2rem;
+}
+
+/* Card content  */
+
+.about__content{
+    margin-left: 50%;
+}
+
+#card{
+    background-color: var(--color-bg-variant);
+    color: var(--color-primary);
+    display: inline-block;
+    width: 28%;
+    padding: 2rem 1rem;
+    margin: 1rem 1% 0 2%;
+    border-radius: 5%;
+
+}
+
+#card:hover{
+    background-color: var(--color-primary);
+    color: var(--color-bg-variant);
+    border-color: var(--color-bg-variant);
+    transition: 300ms;
+    transform: rotate(-2deg);
+
+}
+
+@media screen and (max-width:1024px) {
+    #about{
+        height: auto;
+    }
+    .card_box{
+        height: 6rem;
+    }
+
+}
+
+
+@media screen and (max-width:600px) {
+    #about{
+        padding-top: 4rem;
+        margin-top: 0rem;
+        height: 100%;
+    }
+    
+    
+    #card{
+        width: max-content;
+        display: inline-block;
+        width: 100%;
+        padding: 2rem 1rem;
+        margin: 2rem auto 0;
+        border-radius: 5%;
+        margin-right: 10%;
+        margin-left: 10%;
+        
+    }
+
+    .about__imgbox{
+        width: 100%;
+        float: none;
+    }
+
+    .about__content{
+        margin-right: 33%;
+        float: right;
+    }
+
+    .about__text{
+        text-align: justify;
+        font-size: 1rem;
+        width: 200%;
+        font-weight: 100;
+        position: relative;
+        right: 70%;
+    }
+
+    .about__btn{
+        position: static;
+    }
+}
